@@ -21,7 +21,7 @@ namespace R5T.F0130
         {
             var projectDirectoryName = Instances.ProjectNameConventions.Get_ProjectDirectoryName(projectName);
 
-            var projectDirectoryPath = Instances.PathOperator.GetDirectoryPath(
+            var projectDirectoryPath = Instances.PathOperator.Get_DirectoryPath(
                 solutionDirectoryPath.Value,
                 projectDirectoryName.Value)
                 .ToProjectDirectoryPath();
@@ -39,7 +39,7 @@ namespace R5T.F0130
 
             var projectFileName = Instances.ProjectNameConventions.Get_ProjectFileName(projectName);
 
-            var projectFilePath = Instances.PathOperator.GetFilePath(
+            var projectFilePath = Instances.PathOperator.Get_FilePath(
                 projectDirectoryPath.Value,
                 projectFileName.Value)
                 .ToProjectFilePath();

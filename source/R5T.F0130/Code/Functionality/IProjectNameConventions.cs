@@ -40,7 +40,7 @@ namespace R5T.F0130
         {
             var projectFileNameStem = this.Get_ProjectFileNameStem(projectName);
 
-            var output = Instances.FileExtensionOperator.GetFileName(
+            var output = Instances.FileExtensionOperator.Get_FileName(
                 projectFileNameStem.Value,
                 Instances.FileExtensions.CSharpProjectFile.Value)
                 .ToProjectFileName();
