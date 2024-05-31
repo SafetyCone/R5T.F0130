@@ -42,7 +42,7 @@ namespace R5T.F0130
 
             var output = Instances.FileExtensionOperator.Get_FileName(
                 projectFileNameStem.Value,
-                Instances.FileExtensions.CSharpProjectFile.Value)
+                Instances.FileExtensions.CSharp_ProjectFile.Value)
                 .ToProjectFileName();
 
             return output;
